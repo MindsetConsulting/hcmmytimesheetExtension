@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:sap.me="sap.me" xmlns:sap.ui.layout.form="sap.ui.layout.form"
+	xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m">
+	<!-- This extension point can be used to add fields to sap.ui.layout.form:formElements -->
+	<!--<sap.ui.layout.form:FormElement xmlns:sap.ui.layout.form="sap.ui.layout.form">
+										<sap.ui.layout.form:label>
+											<Label xmlns="sap.m" text="{i18n&gt;NOTE}" class="labelPadding"/>
+										</sap.ui.layout.form:label>
+										<sap.ui.layout.form:fields>
+											<TextArea xmlns="sap.m" id="S31TextArea_clone" value="{entry&gt;/notes}">
+											</TextArea>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement> -->
+									
+										<sap.ui.layout.form:FormElement>
+		<sap.ui.layout.form:label>
+			<Label class="labelPadding" id="getLocationGPS" text="Get Location"/>
+		</sap.ui.layout.form:label>
+		<sap.ui.layout.form:fields>
+				<Button icon="sap-icon://locate-me" press="getGPS" text="Get GPS"/>
+		</sap.ui.layout.form:fields>
+	</sap.ui.layout.form:FormElement>
+	
+	<sap.ui.layout.form:FormElement>
+		<sap.ui.layout.form:label>
+			<Label class="labelPadding" id="locationLabelX" text="Work location X coordinate"/>
+		</sap.ui.layout.form:label>
+		<sap.ui.layout.form:fields>
+			<Input editable="false" enabled="true" id="locationX" placeholder="X Coordinate" value="{entry>/locationX}" type="Text"/>
+		</sap.ui.layout.form:fields>
+	</sap.ui.layout.form:FormElement>
+	
+		<sap.ui.layout.form:FormElement>
+		<sap.ui.layout.form:label>
+			<Label class="labelPadding" id="locationLabelY" text="Work location Y coordinate"/>
+		</sap.ui.layout.form:label>
+		<sap.ui.layout.form:fields>
+			<Input editable="false" enabled="true" id="locationY" placeholder="Y Coordinate" type="Text"/>
+		
+		</sap.ui.layout.form:fields>
+	</sap.ui.layout.form:FormElement>
+	
+	
+	
+</core:FragmentDefinition>

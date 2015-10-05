@@ -1,0 +1,99 @@
+{
+  "generation": [
+    {
+      "templateId": "fioriexttemplate.extensionProject",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Thu, 01 Oct 2015 14:30:19 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Thu, 01 Oct 2015 14:51:49 GMT"
+    },
+    {
+      "templateId": "fioriexttemplate.extendviewcomponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Thu, 01 Oct 2015 14:56:50 GMT"
+    },
+    {
+      "templateId": "fioriexttemplate.extendcontrollercomponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Thu, 01 Oct 2015 15:27:10 GMT"
+    },
+    {
+      "templateId": "fioriexttemplate.i18ncomponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Thu, 01 Oct 2015 20:55:18 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "extensibility": {
+    "controllers": {
+      "Main": "/Main.controller.js",
+      "S3": "/view/S3.controller.js",
+      "S31": "/view/S31.controller.js"
+    },
+    "views": {
+      "Main": "/Main.view.xml",
+      "S3": "/view/S3.view.xml",
+      "S31": "/view/S31.view.xml"
+    },
+    "fragments": {},
+    "type": "hcp",
+    "component": "/Component.js",
+    "configuration": "/Configuration.js",
+    "system": {
+      "account": "b29bfbe54",
+      "type": "subscription",
+      "providerAccount": "fioritrial",
+      "providerName": "hcmmytimesheet",
+      "application": "hcmmytimesheet"
+    },
+    "parentResourceRootUrl": "/ext/parent/undefined/",
+    "namespace": "hcm.mytimesheet",
+    "resourceBundle": "i18n/i18n.properties"
+  },
+  "hcpdeploy": {
+    "account": "b29bfbe54",
+    "name": "hcmmytimesheetextension",
+    "lastVersionWeTriedToDeploy": "1.0.9"
+  },
+  "hybrid.facadeconfig": {
+    "bMockLocation": true,
+    "position": {
+      "latitude": 38.48136794817734,
+      "longitude": -97.72174770039422,
+      "altitude": 0,
+      "accuracy": 0,
+      "altitudeAccuracy": 0,
+      "heading": 0,
+      "velocity": 0
+    },
+    "locations": [
+      {
+        "latitude": 38.48136794817734,
+        "longitude": -97.72174770039422,
+        "altitude": 0,
+        "accuracy": 0,
+        "altitudeAccuracy": 0,
+        "heading": 0,
+        "velocity": 0
+      }
+    ],
+    "accelerometer": {},
+    "compass": {}
+  }
+}
