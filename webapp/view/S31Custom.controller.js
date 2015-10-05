@@ -5,9 +5,10 @@ sap.ui.controller("hcm.mytimesheet.hcmmytimesheetExtension.view.S31Custom", {
 	 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 	 * @memberOf hcm.mytimesheet.hcmmytimesheetExtension.view.S31Custom
 	 */
-	//	onInit: function() {
-	//
-	//	},
+	onInit: function() {
+		var geoModel = new sap.ui.model.json.JSONModel();  
+		this.getView().setModel(geoModel, "geo");
+	},
 
 	/**
 	 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
@@ -261,8 +262,14 @@ sap.ui.controller("hcm.mytimesheet.hcmmytimesheetExtension.view.S31Custom", {
 	onGPSSuccess: function(position){
 		//sap.m.MessageToast.show("gps success: " + position.coords.latitude);
 		//this.byId("locationX").setValue(position.coords.latitude);
-		this.entry.locationX = "buggggg";
-		this.byId("locationY").setValue(position.coords.longitude);
+		//this.entry.locationX = "buggggg";
+		//this.byId("locationY").setValue(position.coords.longitude);
+		
+		var geoModel = this.getView().getModel("geo");
+
+		geoModel.setProperty("/longitude", position.coords.longitude);
+		geoModel.setProperty("/latitude", position.coords.latitude);
+
 		//this.getView().byId("locationX").setValue(position.coords.latitude);
 		//this.getView().byId("locationY").setValue(position.coords.longitude);
 	},
