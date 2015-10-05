@@ -10,10 +10,7 @@ this.hcm.mytimesheet.Component.extend("hcm.mytimesheet.hcmmytimesheetExtension.C
 	metadata: {
 		version: "1.0",
 		config: {
-    "sap.ca.i18Nconfigs": {
-        "bundleName": "hcm.mytimesheet.hcmmytimesheetExtension.i18n.i18n"
-    }
-},
+		},
 		customizing: {
 			"sap.ui.viewExtensions": {
 				"hcm.mytimesheet.view.S31": {
