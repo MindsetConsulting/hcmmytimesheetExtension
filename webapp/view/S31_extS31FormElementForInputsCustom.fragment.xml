@@ -25,7 +25,7 @@
 			<Label class="labelPadding" id="locationLabelX" text="Work location X coordinate"/>
 		</sap.ui.layout.form:label>
 		<sap.ui.layout.form:fields>
-			<Input editable="false" enabled="true" id="locationX" placeholder="X Coordinate" value="{entry>/locationX}" type="Text"/>
+			<Input editable="false" enabled="true" id="locationX" placeholder="X Coordinate" value="{geo>/longitude}" type="Text"/>
 		</sap.ui.layout.form:fields>
 	</sap.ui.layout.form:FormElement>
 	
@@ -34,7 +34,7 @@
 			<Label class="labelPadding" id="locationLabelY" text="Work location Y coordinate"/>
 		</sap.ui.layout.form:label>
 		<sap.ui.layout.form:fields>
-			<Input editable="false" enabled="true" id="locationY" placeholder="Y Coordinate" type="Text"/>
+			<Input editable="false" enabled="true" id="locationY" placeholder="Y Coordinate" value="{geo>/latitude}" type="Text"/>
 		
 		</sap.ui.layout.form:fields>
 	</sap.ui.layout.form:FormElement>
